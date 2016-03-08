@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-$ php composer.phar require dilden/yii2-feedbackwidget "@dev-master"
+$ php composer.phar require dilden/yii2-feedback-widget "dev-master"
 ```
 
 or add
 
 ```
-"dilden/yii2-feedbackwidget": "@dev-master"
+"dilden/yii2-feedback-widget": "dev-master"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -62,6 +62,8 @@ Setting up your controller to handle the AJAX response is simple enough. Simply 
 
 ```php
 namespace app\controllers;
+
+use yii\web\Response;
 
 class PinneappleController extends Controller
 {
