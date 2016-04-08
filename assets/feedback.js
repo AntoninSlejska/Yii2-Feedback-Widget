@@ -442,7 +442,9 @@
 				});
 
 				$(document).on('click', '#feedback-highlighter-next', function() {
-					$('#modal-close-button')[0].click();
+					if ( $( "#modal-close-button" ).length ) {
+					    $('#modal-close-button')[0].click();
+					}
 					canDraw = false;
 					$('#feedback-canvas').css('cursor', 'default');
 					var sy = $(document).scrollTop(),
